@@ -71,13 +71,21 @@ header{
   text-align: left;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #ffff;
+}
+
+.hero-img {
+  position: absolute;
+  top: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
   color: #ffff;
 }
 
 h1.hero {
-  font-size: 650%;
+  font-size: 600%;
   line-height: 1;
 }
 
@@ -186,180 +194,6 @@ a.image:focus {
 }
 /* END OF IMAGE AS A LINK */
 
-/* .inner_header{
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin : 0 auto;
-  background-color: #ffff;
-}
-
-.logo_container{
-  height:150px;
-  display: table;
-  float:left;
-} */
-
-/* Code source: https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog | */
-
-/* .nav{
-  overflow: hidden;
-  float: right;
-  background-color: #ffff;
-  height: 100%
-}
-
-.nav2{
-  overflow: hidden;
-  float: left;
-  background-color: #ffff;
-  height: 100%
-}
-.nav2 a{
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  float: left;
-  text-decoration: none;
-  color:black;
-  font-family: "Karla";
-  background-color: #ffff;
-  padding: 0px 20px;
-}
-
-.nav a{
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  float: left;
-  text-decoration: none;
-  color:black;
-  font-family: "Karla";
-  background-color: #ffff;
-  padding: 0px 20px;
-}
-
-.nav a:hover {
-
-  color: #fff;
-}
-
-.nav2 a:hover {
-  background-color: #C41515;
-  color: white;
-} */
-/*
-.title_box{
-  height:200px;
-  padding: 20px;
-  text-align: center;
-  vertical-align: middle;
-  font-family: "Karla-Bold";
-  background-color: #fff9ed;
-}
-
-.section_box{
-  height: 50px;
-  padding: 1px 10px 1px 10px;
-  text-align: left;
-  vertical-align: middle;
-  font-family: "Karla-Bold";
-  background-color: #C41515;
-  color: #fff9ed;
-}
-
-.page_column {
-  text-align: left;
-  align-items: center;
-  width: 100%;
-}
-
-.sub-color{
-  color: #C41515;
-}
-
-.sub-color2{
-  color: #535353;
-}
-
-.page_column p{
-  display: inline-block;
-  padding: 0px 20px 20px 0px;
-}
-
-.card {
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.inTextLink{
-  display: block;
-	color: white;
-	background-color: rgb(250,100,75);
-	font-size: 1.5rem;
-	padding: 0.25rem 0.5rem;
-	text-decoration: none;
-	transition: background-color 0.5s ease-out;
-} */
-/*
-.button-nav {
-  font-family: "Karla";
-  display: inline-block;
-  padding: 0.5rem;
-  color: black;
-  background-color: #ffff;
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-.button-nav:hover, .button-nav:focus {
-  background-color: #64AAA9;
-} */
-
-/* .label_border{
-  border-radius: 0px;
-  border-color: #C41515;
-}
-
-.button{
-  font-family: "Karla";
-  background-color: #64AAA9;
-  border: none;
-  color: white;
-  padding: 8px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  font-size: 14px;
-  margin 5px 5px 5px;
-  cursor: pointer;
-}
-
-.button:hover, .button:focus {
-  background-color: #185c5b;
-}
-
-form {
-  border: 1px solid #c6c7cc;
-  border-radius: 5px;
-  font-family: 14px/1.4 "Karla";
-  overflow: hidden;
-  width: 240px;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-input {
-  border-radius: 5px;
-  font: 14px/1.4 "Karla", Helvetica, Arial, sans-serif;
-  margin: 0;
-}
 
 /* Code source: https://stackoverflow.com/questions/17175563/how-to-set-paragraph-width-automatically-in-css | */
 
