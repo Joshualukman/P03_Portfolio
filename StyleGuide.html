@@ -8,7 +8,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flexbox.css" rel="stylesheet">
-    <link rel="shortcut icon" type"image/png" href="Logos/JLOGO-WHITE.png">
+    <link rel="shortcut icon" type="image/png" href="Logos/JLOGO.png">
   </head>
 
   <!-- NAVIGATION BAR -->
@@ -32,24 +32,24 @@
 <!-- HERO -->
   <div class="hero-image-home">
     <div class="hero-text">
-      <h1 class="hero"><a> Joshua Lukman's Portfolio</h1>
-      <h2 class="hero"><a> Style Guide </h2>
+      <h1 class="hero">Joshua Lukman's Portfolio</h1>
+      <h2 class="hero"> Style Guide </h2>
     </div>
   </div>
   <!-- END OF HERO -->
 
   <!-- START OF STYLEGUIDE -->
   <section class="content">
-    <section class="element-white">
+    <section id="content">
 
       <!-- HEADINGS -->
       <div class = "container">
         <div class="block-transparent text">
           <div class="text-transparent">
-            <h1 class="hero">Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
+            <h1 class="hero">Heading 1</h1><br>
+            <h2>Heading 2</h2><br>
+            <h3>Heading 3</h3><br>
+            <h4>Heading 4</h4><br>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
       <div class = "container">
         <div class="block-transparent text">
           <div class="text-transparent">
-            <h1 class="hero">Combined Elements</h1>
+            <h1 class="hero">Combined Elements</h1><br>
             <div class="nav">
               <ul>
                 <li><a class = "in-text" href="About.html" >About Me</a></li>
@@ -76,9 +76,9 @@
       <div class = "container">
         <div class="block-transparent text">
           <div class="text-transparent">
-            <h1 class="hero">LOGOS</h1>
-            <img src="Logos/JLOGO-WHITE.png" width="200" />
-            <img src="Logos/JLOGO-BLACK.png" width="200" />
+            <h1 class="hero">LOGOS</h1><br>
+            <img src="Logos/JLOGO-WHITE.png" width="200" alt="logo" />
+            <img src="Logos/JLOGO-BLACK.png" width="200" alt="logo" />
           </div>
         </div>
       </div>
@@ -87,10 +87,31 @@
       <!-- COLORS -->
       <div class = "container">
         <div class="block-transparent text">
-          <div class="text-transparent">
+          <div class="text-transparent"><br>
             <h1 class="hero">COLOR PALETTE</h1>
-            <img src="img/COLOR1.png" width="200" />
-            <img src="img/COLOR2.png" width="200" />
+            <img src="img/COLOR1.png" width="200" alt="COLOR1"/>
+            <img src="img/COLOR2.png" width="200" alt="COLOR2"/>
+          </div>
+        </div>
+      </div>
+      <!-- END OF COLORS -->
+
+      <!-- COLORS -->
+      <div class = "container">
+        <div class="block-transparent text">
+          <div class="text-transparent">
+            <h1 class="hero">IMAGE AS LINKS</h1><br>
+            <div class = "container">
+              <div class="block">
+                <a href="Project1.html"><img src="img/Onboarding.png" width="500" class="img-button" alt="project 1"/></a>
+              <br>
+              </div>
+              <div class="block">
+                <a href="Project2.html"><img src="img/VRproject.png" width="500" class="img-button" alt="project 2"/></a>
+              <br>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -100,13 +121,17 @@
       <div class = "container">
         <div class="block-transparent text">
           <div class="text-transparent">
-            <h1 class="hero">FONTS</h1>
-            <img src="https://miro.medium.com/max/1400/1*4xaoreUrPVbnhBKJ63StDQ.png" height = "300">
+            <h1 class="hero">FONTS</h1><br>
+            <img src="https://miro.medium.com/max/1400/1*4xaoreUrPVbnhBKJ63StDQ.png" height = "500" alt="font">
           </div>
         </div>
       </div>
       <!-- FONT -->
+    </section>
+  </section>
 
+  <section class="content">
+    <section id="content">
       <!-- CONTACT FORM -->
       <div class = "container">
         <div class="block-transparent text">
@@ -154,44 +179,25 @@
                   </form>
                 </div>
               </div>
-              <div class="container">
-                <div class="table-block">
-                  <form>
-                    <div class="group">
-                      <form>
-                        <label for="subject">Subject</label><br/><br/>
-                        <div class="custom-select" style="width:auto;">
-                          <select name="subject" id="subject">
-                            <option value="0">Select Subject:</option>
-                            <option value="1">Booking Details & Process</option>
-                            <option value="2">Stay Listings</option>
-                            <option value="3">Others</option>
-                          </select>
-                        </div>
-                      </form>
-                    </div>
-                    <br>
-                  </form>
-                </div>
-              </div>
+
               <div class="container">
                 <div class="table-block">
                   <form>
                     <label>Message</label><br/><br/>
-                    <textarea name="commentTextInput" rows="7"></textarea>
+                    <textarea name="commentTextInput" rows="15" cols="100" ></textarea>
                     <br>
                   </form>
                 </div>
               </div>
             </div>
-
+            <a class="buttons" id="submit-message" type="submit" href="HomeIndex.html">Submit</a>
           </div>
         </div>
+
       </div>
       <!-- CONTACT FORM -->
 
     </section>
-
   </section>
   <!-- END OF STYLEGUIDE -->
 </main>
@@ -202,13 +208,13 @@
 
     <ul class="socials">
       <li>
-        <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.facebook.com/joshua.lukman/"><i class="fa fa-facebook"></i></a>
       </li>
       <li>
-        <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/joshua-lukman-970150142/"><i class="fa fa-linkedin"></i></a>
       </li>
       <li>
-        <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.instagram.com/lukmanjoshua/"><i class="fa fa-instagram"></i></a>
       </li>
     </ul>
     <a class="in-text" href="StyleGuide.html">Style Guide</a>

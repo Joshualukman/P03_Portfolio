@@ -33,6 +33,27 @@ FLEXBOX STYLING
 	background-color: #FFF;
 }
 
+.container .block-transparent {
+	-webkit-flex: 1 1 15em;
+	-ms-flex: 1 1 15em;
+	flex: 1 1 15em;
+	padding: 0 1rem;
+	padding: 30px;
+	margin: 3rem 3rem 3rem 3rem;
+	background-color: #FFF;
+}
+
+.container .block-transparent img {
+	display: flex;
+	-webkit-flex: 3 1 auto;
+	-ms-flex: 3 1 auto;
+	flex: 3 1 auto;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
 .container .block img {
 	display: flex;
 	-webkit-flex: 3 1 auto;
@@ -60,6 +81,7 @@ FLEXBOX STYLING
 	margin-bottom: 2rem;
 }
 
+
 /* CONTAINER FOR PROJECT CONTENT */
 .project-container {
 	display: -webkit-flex;
@@ -78,8 +100,8 @@ FLEXBOX STYLING
 	-ms-flex: 1 1 15em;
 	flex: 1 1 15em;
 	padding: 0 1rem;
-	padding: 30px;
-	margin: 3rem 3rem 3rem 3rem;
+	padding: 10px;
+	margin: 1rem 1rem 1rem 1rem;
 	background-color: #FFF;
 }
 
@@ -132,7 +154,11 @@ FLEXBOX STYLING
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
 	margin-top: 15px;
+	margin-left: 150px;
+	margin-right: 150px;
 	background-color: transparent;
+	text-align: left;
+	font-weight: 5000;
 	/*
 	border: 1px solid black;
 	*/
@@ -183,6 +209,42 @@ FLEXBOX STYLING
 		width: 650px;
 	}
 	/* END OF TEXT INPUT FIELD */
+	.container .block {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		margin: 0rem 1rem 0rem 1rem;
+	}
+	.project-container .block-transparent {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		padding: 0rem 0.125rem 0rem 0.125rem;
+		margin: 0rem 1rem 0rem 1rem;
+		background-color: transparent;
+	}
+	.project-container .block-transparent img {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		flex: 0 1 auto;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.project-container .text-transparent {
+		margin-bottom: 3rem;
+	}
+
+	.project-container .block img {
+		max-width: 400px;
+		-webkit-flex: 3 1 auto;
+		-ms-flex: 3 1 auto;
+		flex: 3 1 auto;
+	}
+	.project-container .table-block h2 {
+		display: block;
+		font-size: 110%;
+	}
 }
 
 /* BREAKPOINT 2 */
@@ -211,6 +273,43 @@ FLEXBOX STYLING
 		width: 500px;
 	}
 	/* END OF TEXT INPUT FIELD */
+
+	.container .block {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		margin: 0rem 1rem 0rem 1rem;
+	}
+	.project-container .block-transparent {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		padding: 0rem 0.125rem 0rem 0.125rem;
+		margin: 0rem 1rem 0rem 1rem;
+		background-color: transparent;
+	}
+	.project-container .block-transparent img {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		flex: 0 1 auto;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.project-container .text-transparent {
+		margin-bottom: 3rem;
+	}
+
+	.project-container .block img {
+		max-width: 400px;
+		-webkit-flex: 3 1 auto;
+		-ms-flex: 3 1 auto;
+		flex: 3 1 auto;
+	}
+	.project-container .table-block h2 {
+		display: block;
+		font-size: 110%;
+	}
 }
 
 /* BREAKPOINT 3 */
@@ -238,11 +337,87 @@ FLEXBOX STYLING
 		-ms-flex: 3 1 auto;
 		flex: 3 1 auto;
 	}
+
+	.container .block {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		margin: 0rem 1rem 0rem 1rem;
+	}
+	.project-container .block-transparent {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		padding: 0rem 0.125rem 0rem 0.125rem;
+		margin: 0rem 1rem 0rem 1rem;
+		background-color: transparent;
+	}
+	.project-container .block-transparent img {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		flex: 0 1 auto;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.project-container .text-transparent {
+		margin-bottom: 3rem;
+	}
+
+	.project-container .block img {
+		max-width: 400px;
+		-webkit-flex: 3 1 auto;
+		-ms-flex: 3 1 auto;
+		flex: 3 1 auto;
+	}
+	.project-container .table-block h2 {
+		display: block;
+		font-size: 110%;
+	}
 	/* END OF CONTAINERS */
+
+
 }
 
 /* BREAKPOINT 4 */
 @media (max-width:1000px) {
+
+	.container .block {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		margin: 0rem 1rem 0rem 1rem;
+	}
+	.project-container .block-transparent {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		padding: 0rem 0.125rem 0rem 0.125rem;
+		margin: 0rem 1rem 0rem 1rem;
+		background-color: transparent;
+	}
+	.project-container .block-transparent img {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		flex: 0 1 auto;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.project-container .text-transparent {
+		margin-bottom: 3rem;
+	}
+
+	.project-container .block img {
+		max-width: 400px;
+		-webkit-flex: 3 1 auto;
+		-ms-flex: 3 1 auto;
+		flex: 3 1 auto;
+	}
+	.project-container .table-block h2 {
+		display: block;
+		font-size: 110%;
+	}
 	.container .image {
 		order: 1;
 	}
@@ -279,6 +454,42 @@ FLEXBOX STYLING
 		width: 400px;
 	}
 	/* END OF TEXT INPUT FIELD */
+	.container .block {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		margin: 0rem 1rem 0rem 1rem;
+	}
+	.project-container .block-transparent {
+		-webkit-flex: 1 1 15em;
+		-ms-flex: 1 1 15em;
+		flex: 1 1 15em;
+		padding: 0rem 0.125rem 0rem 0.125rem;
+		margin: 0rem 1rem 0rem 1rem;
+		background-color: transparent;
+	}
+	.project-container .block-transparent img {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		flex: 0 1 auto;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.project-container .text-transparent {
+		margin-bottom: 3rem;
+	}
+
+	.project-container .block img {
+		max-width: 400px;
+		-webkit-flex: 3 1 auto;
+		-ms-flex: 3 1 auto;
+		flex: 3 1 auto;
+	}
+	.project-container .table-block h2 {
+		display: block;
+		font-size: 110%;
+	}
 }
 
 /* BREAKPOINT 6 */
@@ -350,14 +561,14 @@ FLEXBOX STYLING
 		-webkit-flex: 1 1 15em;
 		-ms-flex: 1 1 15em;
 		flex: 1 1 15em;
-		margin: 0rem 1rem 2rem 1rem;
+		margin: 0rem 1rem 0rem 1rem;
 	}
 	.project-container .block-transparent {
 		-webkit-flex: 1 1 15em;
 		-ms-flex: 1 1 15em;
 		flex: 1 1 15em;
-		padding: 0rem 0.125rem 3rem 0.125rem;
-		margin: 0rem 1rem 2rem 1rem;
+		padding: 0rem 0.125rem 0rem 0.125rem;
+		margin: 0rem 1rem 0rem 1rem;
 		background-color: transparent;
 	}
 	.project-container .block-transparent img {
@@ -371,13 +582,7 @@ FLEXBOX STYLING
 	.project-container .text-transparent {
 		margin-bottom: 3rem;
 	}
-	.project-container .block-review {
-		-webkit-flex: 1 1 15em;
-		-ms-flex: 1 1 15em;
-		flex: 1 1 15em;
-		margin: 0rem;
-		background-color: #FFF;
-	}
+
 	.project-container .block img {
 		max-width: 400px;
 		-webkit-flex: 3 1 auto;
