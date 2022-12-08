@@ -1,3 +1,9 @@
+/*
+STYLING
+*/
+
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
 body {
   font-family: "Proxima Nova",sans-serif;
   background: #ffff;
@@ -376,8 +382,8 @@ footer {
 
 .socials a {
   text-decoration: none;
-  background-color: #FFFF;
-  color: #000000;
+  background-color: #000000;
+  color: #fff;
   padding: 20px;
 }
 
@@ -388,7 +394,8 @@ footer {
 }
 
 .socials a:hover {
-  background-color: #000000;
+  background-color: #fff;
+  color: #000000;
   transition: background-color 0.2s ease;
 }
 /* END OF FOOTER */
