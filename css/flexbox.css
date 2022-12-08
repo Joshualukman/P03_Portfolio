@@ -1,5 +1,5 @@
 /*
-FLEXBOX STYLING - Échanger
+FLEXBOX STYLING
 */
 
 *, *::after, *::before {
@@ -18,16 +18,19 @@ FLEXBOX STYLING - Échanger
 	justify-content: space-around;
 }
 
+.container h2{
+	text-align: center;
+}
+
 /* Set the .block class to grow as needed, as well as to have a basis of 15em. */
 .container .block {
 	-webkit-flex: 1 1 15em;
 	-ms-flex: 1 1 15em;
 	flex: 1 1 15em;
-	/* padding: 0 1rem; */
-	/* padding: 1rem 2rem 2rem 2rem; */
-	/* margin: 2rem 2rem 2rem 2rem; */
+	padding: 0 1rem;
+	padding: 30px;
+	margin: 2rem 2rem 2rem 2rem;
 	background-color: #FFF;
-	border: 1px solid #030303;
 }
 
 .container .block img {
@@ -48,63 +51,118 @@ FLEXBOX STYLING - Échanger
 }
 
 .container .block h3 {
-	font-family: 'Inter', sans-serif;
+	font-size: 200%;
+	font-family: 'Proxima Nova', sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	text-transform: uppercase;
+	text-align: center;
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
-	border-bottom: 2px solid #030303;
 }
 
-.container .block-transparent {
+/* CONTAINER FOR PROJECT CONTENT */
+.project-container {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+	background-color: #fff;
+
+}
+
+.project-container .block-transparent {
 	-webkit-flex: 1 1 15em;
 	-ms-flex: 1 1 15em;
 	flex: 1 1 15em;
-	padding: 1rem 2rem 2rem 2rem;
-	margin: 2rem 2rem 2rem 2rem;
-	background-color: transparent;
+	padding: 0 1rem;
+	padding: 30px;
+	margin: 3rem 3rem 3rem 3rem;
+	background-color: #FFF;
 }
 
-.container .block-transparent img {
-	max-width: 500px;
-	flex: 0 1 auto;
+.project-container .block-transparent img {
+	display: flex;
+	-webkit-flex: 3 1 auto;
+	-ms-flex: 3 1 auto;
+	flex: 3 1 auto;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: -15px;
+	margin-bottom: 30px;
 }
 
-.container .block-transparent h2 {
+.project-container .block-transparent h2 {
 	font-size: 36px;
 	color: #000;
+	bottom:80%;
+	left:30%;
+	right:30%;
 }
 
-.container .block-project{
 
+.project-container .block-transparent {
+	-webkit-flex: 20px;
+	-ms-flex: 30px
+	flex: 20px;
+	padding:30px;
+	margin-top: 20px;
+	margin-right: 500px;
+	margin-left: 500px;
+	background-color: #ffff;
 }
+
+/* END OF CONTAINER FOR PROJECT CONTENT */
 
 .text-transparent {
 	position: relative;
+	text-align: center;
+	justify-content: center;
 	top: 50%;
+	bottom:50%;
 	transform: translateY(-50%);
 }
 
-/* END OF CONTAINER BLOCKS */
-
+/* CONTACT FORM */
 /* TABLE BLOCKS */
 .container .table-block {
 	-webkit-flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
-	margin-top: 10px;
+	margin-top: 15px;
 	background-color: transparent;
 	/*
 	border: 1px solid black;
 	*/
 }
+.container .table-block .group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.container .table-block img {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	margin: 5px;
+}
+.container .table-block h3 {
+	margin: 0px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	font-size: 125%;
+	font-style: normal;
+	border-bottom: 2px solid #030303;
+}
+.container .table-block h4 {
+	display: block;
+	font-size: 105%;
+}
+/* END OF CONTACT FORM */
 
-/* END OF TABLE BLOCKS */
+/* BREAKPOINTS */
 
 /* BREAKPOINT 1 */
 @media (max-width:1670px) {
@@ -169,7 +227,7 @@ FLEXBOX STYLING - Échanger
 
 	/* HERO */
 	h1.hero {
-		font-size: 750%;
+		font-size: 650%;
 		line-height: 110%;
 	}
 	/* END OF HERO */
@@ -195,9 +253,7 @@ FLEXBOX STYLING - Échanger
 
 /* BREAKPOINT 5 */
 @media (max-width:950px) {
-	.notification-bar {
-	  opacity:0;
-	}
+
 	.nav {
 		display: flex;
 		padding-bottom: 20px;
@@ -230,13 +286,26 @@ FLEXBOX STYLING - Échanger
 	/* NAVIGATION BAR */
 	.nav {
 		display: flex;
-		padding-bottom: 30px;
+		padding-bottom: 5px;
 	}
 	.nav ul {
 		display: inline;
-		font-size: 110%;
-		line-height: 250%;
+		font-size: 100%;
+		line-height: 200%;
 	}
+
+	.hero-img {
+		position: absolute;
+		top: 80%;
+		left: 60%;
+		margin-bottom: 80px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		overflow: clip;
+	}
+
 	a.button {
 		display: block;
 		margin-top: 20px;
@@ -244,21 +313,13 @@ FLEXBOX STYLING - Échanger
 	}
 	/* END OF NAVIGATION BAR */
 
-	/* HERO */
+	/*  */
 	main {
 		overflow-x: hidden;
 	}
-	.hero-image-home {
-	  background-image: url("../img/background.jpg");
-	  max-width: 800px;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  position: relative;
-		overflow: clip;
-	}
+
 	h1.hero {
-		font-size: 500%;
+		font-size: 300%;
 		line-height: 110%;
 	}
 	p.hero {
@@ -270,14 +331,17 @@ FLEXBOX STYLING - Échanger
 	.content {
 		padding: 3rem 3rem 3rem 3rem;
 	}
+
 	.element-white {
 	  background-color: #fff;
+		justify-content: center;
 	  padding: 0rem 1rem 1rem 1rem;
 	  margin-top: 0rem;
 	  margin-bottom: 2rem;
 	}
 	.container .image {
 		order: 1;
+		justify-content: center;
 	}
 	.container .text {
 		order: 2;
@@ -288,7 +352,7 @@ FLEXBOX STYLING - Échanger
 		flex: 1 1 15em;
 		margin: 0rem 1rem 2rem 1rem;
 	}
-	.container .block-transparent {
+	.project-container .block-transparent {
 		-webkit-flex: 1 1 15em;
 		-ms-flex: 1 1 15em;
 		flex: 1 1 15em;
@@ -296,7 +360,7 @@ FLEXBOX STYLING - Échanger
 		margin: 0rem 1rem 2rem 1rem;
 		background-color: transparent;
 	}
-	.container .block-transparent img {
+	.project-container .block-transparent img {
 		margin-top: 0rem;
 		margin-bottom: 0rem;
 		flex: 0 1 auto;
@@ -304,23 +368,23 @@ FLEXBOX STYLING - Échanger
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.container .text-transparent {
+	.project-container .text-transparent {
 		margin-bottom: 3rem;
 	}
-	.container .block-review {
+	.project-container .block-review {
 		-webkit-flex: 1 1 15em;
 		-ms-flex: 1 1 15em;
 		flex: 1 1 15em;
 		margin: 0rem;
 		background-color: #FFF;
 	}
-	.container .block img {
-		max-width: 150px;
+	.project-container .block img {
+		max-width: 400px;
 		-webkit-flex: 3 1 auto;
 		-ms-flex: 3 1 auto;
 		flex: 3 1 auto;
 	}
-	.container .table-block h2 {
+	.project-container .table-block h2 {
 		display: block;
 		font-size: 110%;
 	}
@@ -340,43 +404,6 @@ FLEXBOX STYLING - Échanger
 		margin-bottom: 10px;
 	}
 	/* END OF CONTAINERS */
-
-	/* ROW TITLES */
-	h2.number {
-		text-align: right;
-	}
-	h2.deposit {
-		text-align: right;
-	}
-	h3.entry {
-		text-align: left;
-	}
-	h3.price {
-		text-align: left;
-	}
-	h3.quantity {
-		text-align: left;
-	}
-	h3.total {
-		text-align: right;
-	}
-	/* END OF ROW TITLES */
-
-	/* COLUMN CONTENTS */
-	h4.entry {
-		text-align: left;
-	}
-	p.price {
-		text-align: left;
-	}
-	p.quantity {
-		text-align: left;
-	}
-	p.total {
-		text-align: right;
-	}
-	/* END OF COLUMN CONTENTS */
-	/* END OF TEXT STYLING FOR CHECKOUT CART */
 
 	/* TEXT INPUT FIELD */
 	input.floating-field {
@@ -411,21 +438,6 @@ FLEXBOX STYLING - Échanger
 	}
 	/* END OF TEXT INPUT FIELD */
 
-	/* ADD-TO-CART BUTTON */
-	.add-to-cart-button {
-		font-weight: 600;
-		padding: 1rem 1rem 1rem 1rem;
-		color: #FFF;
-		background-color: #030303;
-		border-style: hidden;
-		text-decoration: none;
-		transition-property: background-color;
-		transition-duration: 0.5s;
-	}
-	.button-value {
-	  margin-bottom: 1em;
-	}
-	/* END OF ADD-TO-CART BUTTON */
 
 	/* FOOTER */
 	.footer-menu ul {
@@ -434,3 +446,5 @@ FLEXBOX STYLING - Échanger
 	}
 	/* END OF FOOTER */
 }
+
+/* END OF BREAKPOINTS */

@@ -35,15 +35,6 @@ header{
   border-bottom: 2px solid #030303;
 }
 
-.logo-home {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 525px;
-  font-family: "Polarity", serif;
-  font-size: 250%;
-  font-weight: 700;
-}
-
 .nav {
   display: inline-block;
   vertical-align: middle;
@@ -106,6 +97,21 @@ a.hero{
 }
 /* END OF HERO */
 
+
+/* SUB-HEADINGS */
+.subhead-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 500%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+/* END OF SUB-HEADINGS */
+
+
 /* TEXT LINK */
 a {
   color: inherit;
@@ -116,10 +122,81 @@ nav a:focus {
   text-decoration: none;
 
 }
-/* ennd of text links */
+/* end of text links */
+
+/* TEXT INPUT */
+input.floating-field {
+  display: flex;
+  padding: 10px 10px 10px 5px;
+  font-size: 100%;
+  font-weight: 600;
+  width: 280px;
+  border: none;
+  border-bottom: 2px solid #030303;
+  background-color: transparent;
+}
+
+input.floating-field:focus {
+  outline: none;
+}
+
+label.floating-label {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: #030303;
+  font-size: 100%;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input.floating-field:hover ~ label.floating-label,
+input.floating-field:valid ~ label.floating-label {
+  top: -20px;
+  color: #030303;
+  font-size: 85%;
+}
+
+input.floating-field:focus ~ label.floating-label,
+input.floating-field:valid ~ label.floating-label {
+  top: -20px;
+  color: #030303;
+  font-size: 85%;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 280px;
+}
+
+.bar:before {
+  position: absolute;
+  bottom: 1px;
+  content: "";
+  height: 5px;
+  width: 0;
+  background: #fa5a20;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 0%;
+  border-bottom: 1px solid #030303;
+}
+
+input.floating-field:focus ~ .bar:before,
+input.floating-field:focus ~ .bar:after {
+  width: 100%;
+}
+/* END OF TEXT INPUT FIELD */
 
 /* buttons */
-
 .buttons {
   display: inline-block;
   padding: 0.75rem;
@@ -138,8 +215,6 @@ nav a:focus {
   background-color: #030303;
 
 }
-
-
 /* end of buttons */
 
 
@@ -161,8 +236,6 @@ nav a:focus {
   margin-bottom: 2rem;
 }
 
-
-
 a.in-text {
   padding: 0.75rem;
   color: inherit;
@@ -175,30 +248,20 @@ a.in-text:hover {
   color: #000000;
 }
 
-
 /* IMAGE AS A LINK */
-a.image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  opacity: 1;
-  transition: 0.5s ease;
+
+.img-button:hover, .img-button:focus {
+  transform: scale(1.1);
+  transition: 0.5s ease;;
 }
 
-a.image:hover {
-  opacity: 0.5;
-}
-
-a.image:focus {
-  opacity: 1;
-}
 /* END OF IMAGE AS A LINK */
 
 
 /* Code source: https://stackoverflow.com/questions/17175563/how-to-set-paragraph-width-automatically-in-css | */
 
 .container{
-  text-align: left;
+  text-align: center;
 }
 .container p{
   display: inline-block;
@@ -257,35 +320,97 @@ a.image:focus {
   flex-wrap: wrap;
 }
 
-
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 20px;
+textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid #030303;
 }
 
-.row {margin: 0 -5px;}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* FOOTER */
+/* FOOOTER: https://www.foolishdeveloper.com/2021/09/responsive-footer-design.html */
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  height: auto;
+  width: 100vw;
+  padding: 100px;
+  color: #fFF;
 }
 
-.product_card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  margin-top: 25px;
-  background-color: #f1f1f1;
 }
 
-/*  */
+.footer-content h3 {
+  font-size: 250%;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 850px;
+  margin: 10px auto;
+  line-height: 2rem;
+  color: #FFFF;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  background-color: #FFFF;
+  color: #000000;
+  padding: 20px;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.2s ease;
+}
+
+.socials a:hover {
+  background-color: #000000;
+  transition: background-color 0.2s ease;
+}
+/* END OF FOOTER */
+
+
+/* END OF FOOOTER */
+
+/* BREAKPOINTS */
 
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
+  }
+  .subhead-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -302,4 +427,4 @@ a.image:focus {
     display: block;
     margin-bottom: 20px;
   }
-} */
+}
